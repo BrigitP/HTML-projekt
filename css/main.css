@@ -1,0 +1,36 @@
+/*
+ paar fonti, mis on saadud https://fonts.google.com/ (see teeb ise meie jaoks koodi ka valmis, kui fondid ära valida, siis siin lihtsalt alumine välja vahetada)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Sora:wght@600&display=swap');
+
+body {
+    /* taustapilt: see on võetud https://www.toptal.com/designers/subtlepatterns/ lehelt ning meile maha salvestatud img kausta */
+    background: url(../img/white-waves.png) repeat 0 0;
+}
+
+/* pealkirjade jaoks üks font, ülal imporditud */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+}
+
+/* sisu jaoks teine font, ülal imporditud */
+p, div {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* nummerdatud sisu jaoks */
+li {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* see on ainult tagasinupu class="tagasi" klassile tehtud css */
+.tagasi {
+    padding-left: 30px;
+}
+
+/* see on ainult sisu class="sisu" klassile tehtud css */
+.sisu {
+    padding-left: 30px;
+    padding-top: 30px;
+
+}
