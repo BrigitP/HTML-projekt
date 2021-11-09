@@ -57,12 +57,12 @@ let vastused = {
         retsept: 'pasta.html'
     },
     'a321': {
-        tekst: 'Eelistan tervilikku',
+        tekst: 'Eelistan tervislikku',
         retseptiPealkiri: 'Soovitame teile poke kaussi',
         retsept: 'smoothiebowl.html'
     },
     'a322': {
-        tekst: 'Eelistan mittetervislikku',
+        tekst: 'Ei soovi tervislikku',
         retseptiPealkiri: 'Soovitame teile grilljuustu',
         retsept: 'grilledcheese.html'
     }
