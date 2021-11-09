@@ -10,11 +10,30 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<h1>Tudengi retseptiraamat</h1>
+<h1>Mida ma täna söön?!</h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<button onclick="valiRetsept('macandcheese.html')">Mac & Cheese</button>
-<button onclick="valiRetsept('omlett.html')">Omlett</button>
-<button onclick="valiRetsept('nuudlid.html')">Nuudlid</button>
+<div class = "macandcheese">
+    <img width="560" src="img/macandcheese.jpg"/>
+    <button onclick="valiRetsept('macandcheese.html')">Mac & Cheese</button>
+</div>
+<div class = "grilledcheese">
+    <img width="560" src="img/grilledcheese.jpg"/>
+    <button onclick="valiRetsept('grilledcheese.html')">Grilled cheese võikud</button>
+</div>
+<div class = "pasta">
+    <img width="560" src="img/pasta.jpg"/>
+    <button onclick="valiRetsept('pasta.html')">Pasta Bolognese</button>
+</div>
+<div class="karririis">
+    <img width="560" src="img/karririis.jpg"/>
+    <button onclick="valiRetsept('karririis.html')">Karri-riis</button>
+</div>
+<div class="smoothiebowl">
+    <img width="560" src="img/smoothiebowl.jpg"/>
+    <button onclick="valiRetsept('smoothiebowl.html')">Smoothie Bowl</button>
+</div>
+
+
 <div id="content"></div>
 
 </body>
