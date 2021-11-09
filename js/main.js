@@ -86,7 +86,7 @@ function vahetaSisu(kysimuseVoti) {
         }
     }
 
-    document.getElementById("question").innerHTML = html;
+    document.getElementById("kysimus").innerHTML = html;
 }
 
 // see funktsioon vahetab "question" nimelise divi sisu välja retseptivalikuga
@@ -96,5 +96,5 @@ function valiVastus(vastuseVoti) {
     html += '<button class="soovitus" onclick="valiRetsept(\'' + vastuseSisu.retsept + '\')">' + vastuseSisu.retseptiPealkiri + '</button>';
     html += '<br>';
     html += '<button class="uuesti" onclick="vahetaSisu(\'q1\')">Alusta algusest</button>';
-    document.getElementById("question").innerHTML = html;
+    document.getElementById("kysimus").innerHTML = html;
 }
