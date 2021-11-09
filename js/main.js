@@ -7,6 +7,7 @@ function mineTagasi() {
 }
 
 /*
+ Valikud soovitamisel:
  1. Kas eelistate praadi või snäkki?
  1.1) Eelistan praadi
  2.1) Kas soovite riisirooga või makaronirooga?
@@ -21,7 +22,6 @@ function mineTagasi() {
  3.2.1) Soovitame teile poke kaussi
  2.2.2) Ei soovi tervislikku
  3.2.2) Soovitame teile grilljuustu
-
  */
 var kysimused = {
     'q1': {
@@ -68,6 +68,8 @@ var vastused = {
     }
 
 }
+
+// see funktsioon vahetab "question" nimelise divi sisu välja meie küsimuse ja vastustega
 function vahetaSisu(kysimuseVoti) {
     var kysimus = kysimused[kysimuseVoti];
     var html = kysimus.tekst;
@@ -87,6 +89,7 @@ function vahetaSisu(kysimuseVoti) {
     document.getElementById("question").innerHTML = html;
 }
 
+// see funktsioon vahetab "question" nimelise divi sisu välja retseptivalikuga
 function valiVastus(vastuseVoti) {
     var html = '';
     var vastuseSisu = vastused[vastuseVoti];
