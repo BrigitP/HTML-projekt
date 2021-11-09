@@ -23,7 +23,7 @@ function mineTagasi() {
  2.2.2) Ei soovi tervislikku
  3.2.2) Soovitame teile grilljuustu
  */
-var kysimused = {
+let kysimused = {
     'q1': {
         tekst: 'Kas eelistate praadi või snäkki?',
         vastused: ['a11', 'a12']
@@ -37,7 +37,7 @@ var kysimused = {
         vastused: ['a321', 'a322']
     }
 }
-var vastused = {
+let vastused = {
     'a11': {
         tekst: 'Eelistan praadi',
         jargmineKysimus: 'q21'
@@ -71,13 +71,13 @@ var vastused = {
 
 // see funktsioon vahetab "question" nimelise divi sisu välja meie küsimuse ja vastustega
 function vahetaSisu(kysimuseVoti) {
-    var kysimus = kysimused[kysimuseVoti];
-    var html = kysimus.tekst;
+    let kysimus = kysimused[kysimuseVoti];
+    let html = kysimus.tekst;
     html += '<br>';
 
     for (let i = 0; i < kysimus.vastused.length; i++) {
-        var vastuseVoti = kysimus.vastused[i];
-        var vastuseSisu = vastused[vastuseVoti];
+        let vastuseVoti = kysimus.vastused[i];
+        let vastuseSisu = vastused[vastuseVoti];
 
         if (vastuseSisu.jargmineKysimus) {
             html += '<button class="valikvastus" onclick="vahetaSisu(\'' + vastuseSisu.jargmineKysimus + '\')">' + vastuseSisu.tekst + '</button>';
@@ -91,8 +91,8 @@ function vahetaSisu(kysimuseVoti) {
 
 // see funktsioon vahetab "question" nimelise divi sisu välja retseptivalikuga
 function valiVastus(vastuseVoti) {
-    var html = '';
-    var vastuseSisu = vastused[vastuseVoti];
+    let html = '';
+    let vastuseSisu = vastused[vastuseVoti];
     html += '<button class="soovitus" onclick="valiRetsept(\'' + vastuseSisu.retsept + '\')">' + vastuseSisu.retseptiPealkiri + '</button>';
     html += '<br>';
     html += '<button class="uuesti" onclick="vahetaSisu(\'q1\')">Alusta algusest</button>';
