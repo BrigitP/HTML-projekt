@@ -12,10 +12,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Sora', sans-serif;
 }
-
+.p2 {
+    font-family: "Sora" ;
+    font-weight: bold;
+}
 /* sisu jaoks teine font, ülal imporditud */
 p, div {
     font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 /* nummerdatud sisu jaoks */
@@ -36,4 +40,22 @@ li {
 
 .kysimus {
     padding-bottom: 50px;
+}
+
+.img {
+    width: 30%;
+    float: left;
+}
+
+.p {
+    width: 50%;
+    float: right;
+}
+
+.all {
+    display: flex;
+    background-color:aliceblue;
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
 }
