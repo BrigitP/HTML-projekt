@@ -1,9 +1,92 @@
 /* iga retsepti jaoks lisacss, näiteks et oleks nummerdatud asjade font teist värvi */
+body {
+    /* taustapilt: see on võetud https://www.toptal.com/designers/subtlepatterns/ lehelt ning meile maha salvestatud img kausta */
+    background: url(../img/white-waves.png) repeat 0 0;
+}
+
 li {
     color: rgb(0, 0, 0);
     font-weight: 600;
 }
 
+h1 {
+    font-family: "Libre Baskerville", serif;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: rgb(235, 235, 235);
+    background: #ff4a4a;
+    font-size: 75px;
+}
+.minetagasi {
+background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  max-width: 460px;
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+@media (min-width: 768px) {
+  .minetagasi {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+
 .youtube {
     border: 0;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.sisu_img {
+    float: left;
+    width: 500px;
+    border: solid 2px burlywood;
+    display:grid;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.komponendid {
+    float: left;
+    width: 300px;
+    border: solid 2px burlywood;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.valmistamine {
+    float: left;
+    width: 350px;
+    border: solid 2px burlywood;
+    margin-top: 25px;
+    margin-left: 30px;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+.video {
+    float: left;
+    width: 600px;
 }

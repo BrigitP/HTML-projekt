@@ -9,17 +9,24 @@ body {
 }
 
 /* pealkirjade jaoks üks font, ülal imporditud */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', sans-serif;
+h1 {
+    font-family: "Libre Baskerville", serif;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    color: rgb(235, 235, 235);
+    background: #ff4a4a;
+    font-size: 75px;
 }
-.p2 {
-    font-family: "Sora" ;
-    font-weight: bold;
-}
+
 /* sisu jaoks teine font, ülal imporditud */
-p, div {
-    font-family: 'Roboto', sans-serif;
+p {
+    font-family: "Libre Baskerville", serif;
     font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 10px;
 }
 
 /* nummerdatud sisu jaoks */
@@ -32,30 +39,77 @@ li {
     padding-left: 30px;
 }
 
-/* see on ainult sisu class="sisu" klassile tehtud css */
-.sisu {
-    padding-left: 30px;
-    padding-top: 30px;
-}
-
-.kysimus {
-    padding-bottom: 50px;
-}
-
-.img {
-    width: 30%;
-    float: left;
-}
-
-.p {
-    width: 50%;
-    float: right;
-}
-
-.all {
+.ümbris {
     display: flex;
-    background-color:aliceblue;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    padding: 5px;
-    bottom: 0;
+    height: 50%;
+    width: 98%;
+    padding-top: 30px;
+    border: solid 3px rgba(0, 0, 0, 0.288);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
+    background-image: url("../img/grilledcheese.jpg");
+    background-repeat: 1 1;
+    background-position: center;
+}
+
+/* CSS https://getcssscan.com/css-buttons-examples button 53 - Alpine Day*/
+.kysimus_all {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  max-width: 460px;
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+@media (min-width: 768px) {
+  .kysimus_all {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
+.esimene {
+  background-color: #3DD1E7;
+  border: 0 solid #E5E7EB;
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none #000000 solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: sticky;
+  justify-content: center;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }

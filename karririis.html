@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Karri-riis</title>
     <!-- meie css -->
-    <link rel="stylesheet" href="css/main.css">
     <!-- retsepti css -->
     <link rel="stylesheet" href="css/retsept.css">
     <!-- meie javascripti fail -->
@@ -13,17 +12,17 @@
 <body>
     <h1>Karri-riis</h1>
     <div class="tagasi">
-        <button onclick="mineTagasi()">←Tagasi</button>
+        <button class="minetagasi" onclick="mineTagasi()">←Tagasi</button>
     </div>
     
-    <div class="sisu img">
+    <div class="sisu_img">
         <p>Maitsev riisiroog karriga!</p>
         <img width="400" src="img/karririis.jpg" alt="img/reciple_placeholder.png"/>
         <p>Link retseptile on <a href="https://www.thanksforthemeal.net/japanese-curry-rice-recipe/">siin</a></p>
     </div>
-    <div class="img"> <br><br><br>
+    <div class="komponendid"> <br><br><br>
         <p class="p2">Vaja läheb: </p>
-        <ol>
+        <ol class="ol1">
             <li>Õli</li>
             <li>Võid</li>
             <li>2 suurt küüslaugu küünt</li>
@@ -39,9 +38,9 @@
             <li>Valge riis</li>
         </ol>
     </div>
-    <div class="img"> <br><br><br>
+    <div class="valmistamine"> <br><br><br>
         <p class="p2">Valmistamine: </p>
-        <ol>
+        <ol class="ol2">
             <li>Lisa kuumale pannile 2 supilusikatäit õli ja võid.</li>
             <li>Lisa küüslauk (ning soovi korral ingverit), siis lisa sibul ning pruunista keskmisel kuumusel.</li>
             <li>Järgmisena lisa 2 supilusikatäit karripulbrit, sega ning siis lisa jahu. <br>
@@ -55,7 +54,9 @@
             <li>Samal ajal keeda ära riis.</li>
             <li>Lisa kaste ja riis taldrikule.</li>
             <li>Naudi!</li>
-        </ol>
+            </ol>
+    </div>
+    <div class="video">
         <p>Soovi korral võib vaadata ka videot!</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7emvnX9RT1A" title="YouTube video player" class="youtube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
