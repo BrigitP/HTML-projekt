@@ -36,7 +36,8 @@ let kysimused = {
         tekst: 'Kas soovite tervislikku snäkki või mitte?',
         vastused: ['a321', 'a322']
     }
-}
+};
+
 let vastused = {
     'a11': {
         tekst: 'Eelistan praadi',
@@ -67,7 +68,7 @@ let vastused = {
         retsept: 'grilledcheese.html'
     }
 
-}
+};
 
 // see funktsioon vahetab "question" nimelise divi sisu välja meie küsimuse ja vastustega
 function vahetaSisu(kysimuseVoti) {
