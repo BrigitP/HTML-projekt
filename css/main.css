@@ -8,7 +8,6 @@ body {
     background: url(../img/white-waves.png) repeat 0 0;
 }
 
-/* pealkirjade jaoks üks font, ülal imporditud */
 h1 {
     font-family: "Libre Baskerville", serif;
     justify-content: center;
@@ -19,7 +18,6 @@ h1 {
     font-size: 75px;
 }
 
-/* sisu jaoks teine font, ülal imporditud */
 p {
     font-family: "Libre Baskerville", serif;
     color:rgb(14, 71, 136);
@@ -31,12 +29,9 @@ p {
     margin-bottom: 45px;
 }
 
-/* nummerdatud sisu jaoks */
 li {
     font-family: 'Roboto', sans-serif;
 }
-
-/* see on ainult tagasinupu class="tagasi" klassile tehtud css */
 
 .ümbris {
     display: flex;
