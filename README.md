@@ -73,7 +73,8 @@ Retsepti lisamiseks on vaja luua uus **.html** fail projekti juurkausta. Igal re
 2. Retsept tekstina
 3. Youtube link
 4. Juhend valmistamiseks
-   Pärast retsepti lisamist on vaja lisada juurde retseptile viitav [vastus](#vastused), ning siis lisada vastus kas juba olemasolevale [küsimusele](#küsimused) või lisada uus küsimus.
+   
+Pärast retsepti lisamist on vaja lisada juurde retseptile viitav [vastus](#vastused), ning siis lisada vastus kas juba olemasolevale [küsimusele](#küsimused) või lisada uus küsimus.
 
 ## Soovid panustada?
 Kui soovid siia midagi juurde lisada, võta ühendust repositooriumi omanikuga. 
