@@ -80,9 +80,9 @@ function vahetaSisu(kysimuseVoti) {
         let vastuseSisu = vastused[vastuseVoti];
 
         if (vastuseSisu.jargmineKysimus) {
-            html += '<button class="valikvastus" onclick="vahetaSisu(\'' + vastuseSisu.jargmineKysimus + '\')">' + vastuseSisu.tekst + '</button>';
+            html += '<button class="nupp" onclick="vahetaSisu(\'' + vastuseSisu.jargmineKysimus + '\')">' + vastuseSisu.tekst + '</button>';
         } else if (vastuseSisu.retsept) {
-            html += '<button class="valikvastus" onclick="valiVastus(\'' + vastuseVoti + '\')">' + vastuseSisu.tekst + '</button>';
+            html += '<button class="nupp" onclick="valiVastus(\'' + vastuseVoti + '\')">' + vastuseSisu.tekst + '</button>';
         }
     }
 
@@ -93,8 +93,8 @@ function vahetaSisu(kysimuseVoti) {
 function valiVastus(vastuseVoti) {
     let html = '';
     let vastuseSisu = vastused[vastuseVoti];
-    html += '<button class="soovitus" onclick="valiRetsept(\'' + vastuseSisu.retsept + '\')">' + vastuseSisu.retseptiPealkiri + '</button>';
+    html += '<button class="nupp" onclick="valiRetsept(\'' + vastuseSisu.retsept + '\')">' + vastuseSisu.retseptiPealkiri + '</button>';
     html += '<br>';
-    html += '<button class="uuesti" onclick="vahetaSisu(\'q1\')">Alusta algusest</button>';
+    html += '<button class="nupp" onclick="vahetaSisu(\'q1\')">Alusta algusest</button>';
     document.getElementById("kysimus").innerHTML = html;
 }
