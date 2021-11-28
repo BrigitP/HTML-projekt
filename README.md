@@ -25,6 +25,8 @@ HTML-projekt
 │   pasta.html
 │   smoothiebowl.html
 │
+└───img 
+│   └───...
 └───js 
 │   └───main.js
 │   
@@ -33,8 +35,9 @@ HTML-projekt
     └───retsept.css
 ```
 
-- **js**: kaust javascripti failideks
-- **css**: kaust css failideks
+- **img**: kaust pildifailide jaoks
+- **js**: kaust javascripti failide jaoks
+- **css**: kaust css failide jaoks
 
 ### Küsimused
 Küsimused ja vastused on kirjeldatud **main.js** failis.
