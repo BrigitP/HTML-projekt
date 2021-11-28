@@ -1,4 +1,4 @@
-/* iga retsepti jaoks lisacss, näiteks et oleks nummerdatud asjade font teist värvi */
+/* iga retsepti jaoks lisacss */
 body {
     /* taustapilt: see on võetud https://www.toptal.com/designers/subtlepatterns/ lehelt ning meile maha salvestatud img kausta */
     background: url(../img/white-waves.png) repeat 0 0;
@@ -18,75 +18,113 @@ h1 {
     background: #ff4a4a;
     font-size: 75px;
 }
-.minetagasi {
-background-color: #3DD1E7;
-  border: 0 solid #E5E7EB;
-  box-sizing: border-box;
-  color: #000000;
-  display: flex;
-  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.75rem;
-  padding: .75rem 1.65rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none #000000 solid;
-  text-decoration-thickness: auto;
-  max-width: 460px;
-  position: relative;
-  justify-content: center;
-  cursor: pointer;
-  transform: rotate(-2deg);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-@media (min-width: 768px) {
-  .minetagasi {
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
+/* CSS https://getcssscan.com/css-buttons-examples button 53 - Alpine Day*/
+.mineTagasi {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    max-width: 200px;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
   }
-}
+  
+  @media (min-width: 150px) {
+    .mineTagasi {
+      padding: .75rem 3rem;
+      font-size: 1.25rem;
+    }
+  }
+  .minetagasi {
+    background-color: #3DD1E7;
+    border: 0 solid #E5E7EB;
+    box-sizing: border-box;
+    color: #000000;
+    display: flex;
+    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: .75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    width: 100%;
+    max-width: 200px;
+    position: sticky;
+    justify-content: center;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
 
 .youtube {
     border: 0;
 }
 
 p {
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.925);
     font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    font-family: "Libre Baskerville", serif;
+}
+
+h2 {
+    font-family: "Libre Baskerville", serif;
+    color: rgb(235, 235, 235);
+    background: #ff4a4a;
+    font-size: 25px;
+    text-align: center;
+}
+
+.esimene_blokk {
+    display: flex;
 }
 
 .sisu_img {
-    float: left;
-    width: 500px;
-    border: solid 2px burlywood;
-    display:grid;
-    margin-top: 25px;
-    align-items: center;
-    justify-content: center;
-}
-.komponendid {
-    float: left;
-    width: 300px;
-    border: solid 2px burlywood;
-    margin-top: 25px;
-    margin-left: 30px;
-}
-.valmistamine {
-    float: left;
-    width: 350px;
-    border: solid 2px burlywood;
-    margin-top: 25px;
-    margin-left: 30px;
-    display:grid;
-    align-items: center;
-    justify-content: center;
+    flex: 1;
+    padding: 40px;
 }
 .video {
-    float: left;
-    width: 600px;
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.teine_blokk {
+    display: flex;
+}
+
+ol {
+    list-style: none;
+}
+
+.komponendid {
+    flex: 1;
+    text-align: center;
+}
+.valmistamine {
+    flex: 1;
+    text-align: left;
 }

@@ -22,11 +22,13 @@ h1 {
 /* sisu jaoks teine font, ülal imporditud */
 p {
     font-family: "Libre Baskerville", serif;
+    color:rgb(14, 71, 136);
     font-weight: bold;
     justify-content: center;
+    position: relative;
     text-align: center;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 }
 
 /* nummerdatud sisu jaoks */
@@ -35,9 +37,6 @@ li {
 }
 
 /* see on ainult tagasinupu class="tagasi" klassile tehtud css */
-.tagasi {
-    padding-left: 30px;
-}
 
 .ümbris {
     display: flex;
